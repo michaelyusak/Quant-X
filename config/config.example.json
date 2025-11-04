@@ -1,0 +1,22 @@
+{
+    "exchange": {
+        "indodax": {
+            "base_url": "https://indodax.com",
+            "api_key": "api_key",
+            "secret_key": "secret",
+            "public_ws_token": "token",
+            "ws_scheme": "wss",
+            "ws_host": "ws3.indodax.com",
+            "ws_path": "/ws/",
+            "orderbook_ws_channel": "market:order-book-"
+        }
+    },
+    "trade": {
+        "coin": "btc",
+        "base": "idr"
+    },
+    "replay": {
+        "port": ":8080",
+        "replay_speed": 1
+    }
+}

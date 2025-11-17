@@ -8,7 +8,8 @@
             "ws_scheme": "wss",
             "ws_host": "ws3.indodax.com",
             "ws_path": "/ws/",
-            "orderbook_ws_channel": "market:order-book-"
+            "orderbook_ws_channel": "market:order-book-",
+            "ticker_ws_channel": "chart:tick-btcidr-"
         }
     },
     "trade": {

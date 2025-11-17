@@ -1,6 +1,8 @@
 package entity
 
-import "encoding/json"
+import (
+	"encoding/json"
+)
 
 type IndodaxResponse[T any] struct {
 	Code    int  `json:"code"`
@@ -43,4 +45,12 @@ type IndodaxWsResponseResult struct {
 
 type IndodaxWsResponse struct {
 	Result IndodaxWsResponseResult `json:"result"`
+}
+
+type TapiResponse[T any] struct {
+	Success   int    `json:"success"`
+	Error     string `json:"error"`
+	Message   string `json:"message"`
+	ErrorCode string `json:"error_code"`
+	Return    T      `json:"return"`
 }
